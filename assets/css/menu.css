@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: darkred;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+
+}
+ul{
+    display: flex;  
+}
+li{
+    margin: 20px;
+    list-style: none;   
+}
+a{ 
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+a::after{
+    content: '';
+    background-color: crimson;
+    position: absolute;
+    left: 50%;
+    width: 0%;
+    height: 0.2rem;
+    bottom: 0.0rem;
+    transition: all 300ms ease-in-out;
+
+}
+.home:hover::after{
+    left: 0%;
+    width: 50px;
+
+}
+.abouts:hover::after{
+    left: 0%;
+    width: 65px;
+}
+
+.contacts:hover::after{
+    left: 0%;
+    width: 85px;
+
+}
