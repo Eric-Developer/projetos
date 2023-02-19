@@ -94,10 +94,7 @@ h5{
     list-style: none;
     display: flex;
 }
-.menu li a{
-    list-style: none;
-    display: block;
-}
+
 a{
     text-decoration: none;
 }
@@ -177,7 +174,7 @@ a{
 .grid-one-content{
     display: flex;
     height: 100vh;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
     text-align: center;
     min-height: 100vh;
@@ -189,9 +186,10 @@ a{
     grid-template-columns: repeat(3,1fr);
     gap: var(--gap);
     counter-reset: grid-counter;
+   
 }
 .grid h3{
-    font-size: 3rem;
+    font-size: 2rem;
     position: relative;
     padding-left: 4rem;
     padding-bottom: 2rem;
