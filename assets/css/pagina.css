@@ -1,0 +1,137 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url(/assets/img/Spotify.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 60px;
+}
+.logo{
+    display: flex;
+    color: black;
+    margin-left: 60px;
+    align-items: center;
+}
+
+
+img{
+    height: 130px;
+    filter: grayscale(1);
+
+}
+
+nav{
+ display: flex;
+ margin: 20px;
+ margin-right: 40px;
+ align-items: center;
+}
+ul{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    color: white;
+}
+li{
+    list-style: none;
+    margin: 10px;
+}
+.link-content{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    position: relative;
+
+}
+
+.link-content::after{
+    content: '';
+    width: 0%;
+    bottom: 0rem;
+    height: 0.2rem;
+    left: 50%;
+    position: absolute;
+    background-color: red;
+    transition: all 300ms ease-in-out;
+}
+
+.Premium:hover::after{
+    width: 63px;
+    left: 2.5%;
+}
+
+.Ajuda:hover::after{
+    width: 40px;
+    left: 2.5%;
+}
+
+.Baixar:hover::after{
+    width: 42px;
+    left: 2.5%;
+}
+.Inscreva-se:hover::after{
+    width: 80px;
+    left: 2.5%;
+}
+
+.Entrar:hover::after{
+    width: 42px;
+    left: 2.5%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: white;
+    margin: 100px;
+
+}
+
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+    color: white;
+
+}
+
+.button{
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+
+}
+.button1{
+    background-color:green;
+
+}
+.button2{
+    border:1px solid white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.button1:hover , .button2:hover{
+    background-color: red;
+}
